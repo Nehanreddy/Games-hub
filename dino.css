@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;               /* Use flexbox for centering */
+    flex-direction: column;      /* Align items vertically */
+    justify-content: center;     /* Center vertically */
+    align-items: center;         /* Center horizontally */
+    height: 100vh;              /* Full viewport height */
+  }
+  
+  #start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  #game-board {
+    background-color: lightgray;
+    border: 2px solid black;
+    display: none; /* Initially hidden */
+    margin: 20px auto;
+  }
+  

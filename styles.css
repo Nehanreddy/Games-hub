@@ -1,0 +1,84 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  height: 100vh;
+}
+
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+/* Game Options Section */
+.game-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Adjust the space between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 2rem; /* Adjust the padding */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.game {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px; /* Set a fixed width for consistent sizing */
+  height: 250px; /* Set a fixed height for consistent sizing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+  width: 100%; /* Use full width of the game card */
+  height: 150px; /* Set a fixed height to ensure consistency */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 10px;
+  margin-bottom: 0.5rem; /* Add margin below the image */
+}
+
+.game p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Hover Effects */
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .game-options {
+    flex-direction: column; /* Stack games vertically on smaller screens */
+    gap: 1rem;
+  }
+
+  .game {
+    width: 90%; /* Use most of the screen width on small devices */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller font size on mobile */
+  }
+}
